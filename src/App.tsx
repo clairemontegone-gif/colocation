@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './composants/Navbar'
 import Home from './pages/Home'
 import Taches from './pages/Taches'
 import Depenses from './pages/Depenses'
-import Navbar from './composants/Navbar'
-
 import './App.css'
 
 function App() {
-
   return (
     <BrowserRouter>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/taches" element={<Taches />} />
@@ -19,5 +17,5 @@ function App() {
     </BrowserRouter>
   )
 }
-  
+
 export default App
